@@ -27,6 +27,7 @@ menuBtn.addEventListener("click", function () {
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
+    body.classList.remove("overflow");
     nav.classList.remove("nav-open");
     changeIconToBars();
   });
@@ -67,7 +68,7 @@ function validateEmail(email) {
   if (email === "") {
     showAlert("Ingresa tu Correo Electrónico", "red");
   } else if (regex.test(String(email).toLowerCase())) {
-    showAlert("Email enviado exiotsamente!", "green");
+    showAlert("Email enviado exitosamente.", "green");
     return true;
   } else {
     showAlert("Ingresa un Correo Electrónico Válido", "red");
