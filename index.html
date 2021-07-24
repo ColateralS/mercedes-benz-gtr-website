@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/Mercedes-Benz_Logo Icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Mercedes Benz | AMG GTR</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header Section-->
+        <header class="main-head" id="home">
+            <img src="./img/Mercedes-Benz_Logo.svg" alt="Mercedes Benz Logo">
+            <ul class="nav-links">
+                <li><a href="#specs">Carácteristicas</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#test-drive">Prueba de Manejo</a></li>
+            </ul>
+            <button id="menu-btn"><i class="fas fa-bars"></i></button>
+        </header>
+
+        <!--Hero Section-->
+        <section class="hero">
+            <div class="hero-info">
+                <h2>Mercedes Benz <br /><span>AMG GTR Coupé</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto fugiat consequuntur error
+                    aut non iusto, cumque sunt.</p>
+                <button class="btn">Conocer Más</button>
+            </div>
+            <div class="hero-image">
+                <img src="./img/AMG GTR.png" alt="Mercedes-Benz AMG 45">
+                <div class="hero-specs">
+                    <div class="hero-specs-info">
+                        <h3>Poder</h3>
+                        <p>577 HP</p>
+                    </div>
+                    <div class="hero-specs-info">
+                        <h3>Aceleración</h3>
+                        <p>0 - 100 Km/h ~ 3.6s</p>
+                        <!-- <p>3.6 segundos</p> -->
+                    </div>
+                    <div class="hero-specs-info">
+                        <h3>Torque</h3>
+                        <p>699 Nm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Specs Section-->
+        <section class="specs" id="specs">
+            <img src="./img/AMG GTR Motor.jpg" alt="Mercedes-Benz Motor">
+            <div class="specs-info">
+                <h1>Motor</h1>
+                <img src="./icons/engine.svg" alt="Engine Icon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi provident fugit incidunt ex
+                    doloribus cupiditate, debitis vel! Expedita corporis dolor minus deleniti, iusto magnam tempore
+                    quaerat sit inventore dolores.</p>
+            </div>
+            <div class="specs-info">
+                <h1>Diseño Interior</h1>
+                <img src="./icons/seat.svg" alt="Seat Icon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi provident fugit incidunt ex
+                    doloribus cupiditate, debitis vel! Expedita corporis dolor minus deleniti, iusto magnam tempore
+                    quaerat sit inventore dolores.</p>
+            </div>
+            <img src="./img/AMG GTR Interior.jpg" alt="Mercedes-Benz Interior" id="interior">
+        </section>
+    </div>
+    <!--Gallery Section-->
+    <section class="gallery" id="gallery">
+        <img src="./img/AMG GTR Interior 3.jpg" alt="">
+        <img src="./img/AMG GTR 3.jpg" alt="" id="AMG1">
+        <img src="./img/AMG GTR 1.jpg" alt="" id="AMG2">
+        <img src="./img/AMG GTR Interior 2.jpg" alt="">
+    </section>
+
+    <!--Test Drive Section-->
+    <section class="test-drive" id="test-drive">
+        <h1>Suscríbete para realizar una Prueba de Manejo</h1>
+        <form class="form">
+            <div class="alert"></div>
+            <label for="email">Ingresa tu Correo Electrónico</label>
+            <input type="email" name="email" id="email">
+            <button id="submitBtn">Enviar</button>
+        </form>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-info container">
+            <p>Steeven Ortega. Todos los derechos reservados. &copy; <span id="year"></span></p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Back to Top Button-->
+    <a href="#home" class="top-link"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
